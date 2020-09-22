@@ -23,11 +23,12 @@ const family = {
     }
 };
 
-console.log(family.addFamily(27,"이용현","student")) //.키값을 쓰면 속성을 반환한다. 호출까지 하려면 ()까지!
+console.log(family.addFamily(27,"이용현","employee")) //.키를 쓰면 값을 반환한다. 호출까지 하려면 ()까지!
 console.log(family.addFamily(29,"김대훈","CEO"))
 console.log(family.addFamily(25,"박채은","student")) //중복된 키값이면 키는 중복되고 값만 수정된다.
+console.log(family["addFamily"](27,"홍길동","teacher")) // 매개변수를 넣고 싶다면?
 console.log("------")
 console.log(family.getHeadcount)
-console.log(family.getHeadcount())
+console.log(family.getHeadcount())//함수를 실행!
 console.log(Object.keys(family.members)) //프로토 타입
 console.log(family.members)
