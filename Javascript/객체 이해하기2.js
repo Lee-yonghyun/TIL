@@ -27,8 +27,16 @@ const printMembers = function () {
     // 배열에 대해 for of을 하면 요소를 뽑아낸다.
     for (role in members){
         console.log("role => " + role + ", name => " + members[role].name + ", age => "+ members[role].age)
-        console.log(members[role])
+        // console.log(members[role])
     }
 }
+
+var members = family.members
+members["nephew"]={age:3 , name: "hyun"}
+members.niece = {age:5, name:'lyn'}
+
+delete members.nephew; // 키와 값을 모두 없애는 방법
+delete  members['niece']
+members["이모"] = {age:20, name: "lee"}
 
 printMembers()
