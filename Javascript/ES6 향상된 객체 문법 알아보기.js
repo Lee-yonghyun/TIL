@@ -1,6 +1,6 @@
 
 // 기존의 객체의 속성(키:값)을 변수로 작성할 수 있다.
-// 각 속성의 '키 이름'을 '변수명'으로 정의함
+// 각 속성의 '키 이름'을 '변수명'으로 정의함 const address = 'Seoul'
 const address = 'Seoul'
 const members = {}
 const addFamily = function (age,name,role) {
